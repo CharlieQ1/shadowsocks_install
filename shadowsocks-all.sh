@@ -326,7 +326,7 @@ elif [ "${selected}" == "2" ]; then
     "local_port":1080,
     "password":"${shadowsockspwd}",
     "timeout":120,
-    "method":"aes-256-cfb",
+    "method":"aes-256-gcm",
     "protocol":"origin",
     "protocol_param":"",
     "obfs":"plain",
@@ -649,7 +649,7 @@ install_completed_python() {
     echo -e "Your Server IP        : ${red} $(get_ip) ${plain}"
     echo -e "Your Server Port      : ${red} ${shadowsocksport} ${plain}"
     echo -e "Your Password         : ${red} ${shadowsockspwd} ${plain}"
-    echo -e "Your Encryption Method: ${red} aes-256-cfb ${plain}"
+    echo -e "Your Encryption Method: ${red} aes-256-gcm ${plain}"
 }
 
 install_completed_r() {
